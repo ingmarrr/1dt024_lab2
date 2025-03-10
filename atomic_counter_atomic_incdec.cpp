@@ -18,7 +18,7 @@ int atomic_counter_atomic_incdec::decrement()
 
 void atomic_counter_atomic_incdec::set(int value) 
 {
-    m_value.store(std::memory_order_seq_cst);
+    m_value.store(value, std::memory_order_seq_cst);
 }
 
 int atomic_counter_atomic_incdec::get() 

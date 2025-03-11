@@ -1,6 +1,16 @@
 #include "atomic_counters.hpp"
 #include <atomic>
 
+
+/*
+    memory_order_seq_cst    ✓
+    memory_order_consume    ✓
+    memory_order_acquire    ✓
+    memory_order_release    ✓
+    memory_order_acq_rel    ✓
+    memory_order_seq_cst    ✓
+*/
+
 atomic_counter_atomic_incdec::atomic_counter_atomic_incdec()
     : atomic_counter()
     , m_value(0) {
